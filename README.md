@@ -1,7 +1,7 @@
 # Component Driven Design
 ## Expression Engine Conference 2017
 
-This is the Expression Engine codebase from the "Component Driven Design" presentation at Expression Engine Conference 2017.
+This is the Expression Engine codebase from the "Component Driven Design" presentation at [Expression Engine Conference 2017](https://www.eeconf.com/).
 
 This is intended for code reading, however if you want to run the app there are a few steps.
 
