@@ -1,0 +1,54 @@
+{layout="site/_layout"}
+
+<div id="app">
+  {if segment_1 == 'ui'}
+    {styleguide_nav}
+    <h1 class="components-title">Styleguide</h1>
+  {/if}
+
+  {exp:channel:entries channel="pages" limit="1" dynamic="yes"}
+    {components}
+      {rich_text}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="rich-text">Rich Text</h2>
+        {/if}
+        {component_rich_text}
+      {/rich_text}
+
+      {cta_panel}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="cta-panel">CTA Panel</h2>
+        {/if}
+        {component_cta_panel}
+      {/cta_panel}
+
+      {image_copy}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="image-copy">Image / Copy</h2>
+        {/if}
+        {component_image_copy}
+      {/image_copy}
+
+      {quote}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="quote">Quote</h2>
+        {/if}
+        {component_quote}
+      {/quote}
+
+      {team_members}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="team-members">Team Members</h2>
+        {/if}
+        {component_team_members}
+      {/team_members}
+
+      {contact_form}
+        {if segment_1 == 'ui'}
+          <h2 class="component-title" id="contact-form">Contact Form</h2>
+        {/if}
+        {component_contact_form}
+      {/contact_form}
+    {/components}
+  {/exp:channel:entries}
+</div>

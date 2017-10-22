@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Component Driven Design</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link href="/dist/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    {if segment_1 != 'ui'}
+      <header class="header">
+        <a class="header__logo" href="/">
+          <img class="header__logo-img" src="/img/ds.svg" />
+        </a>
+
+        <a class="header__hamburger" href="#">
+          <img class="header__hamburger-img" src="/img/hamburger.svg" />
+        </a>
+      </header>
+    {/if}
+
+    {layout:contents}
+
+    {if segment_1 != 'ui'}
+      <footer class="footer">
+        <p class="footer__body">
+          Made with <span class="footer__emoji">❤️</span> at Digital Surgeons
+        </p>
+      </footer>
+    {/if}
+
+    <script src="/dist/bundle.js"></script>
+  </body>
+</html>

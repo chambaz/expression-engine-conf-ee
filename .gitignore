@@ -1,0 +1,15 @@
+.DS_Store
+._*
+
+public_html/dist
+
+node_modules
+npm-debug.log
+yarn.lock
+
+system/user/templates/default_site/_partials/component_*
+
+system/ee/*
+system/user/addons/*
+public_html/themes/*
+public_html/images/*

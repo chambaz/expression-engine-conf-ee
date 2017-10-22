@@ -1,0 +1,78 @@
+{exp:http_header content_type="application/json" access_control_allow_origin="*"}
+
+{exp:channel:entries channel="pages" limit="1" dynamic="yes"}
+{
+  "components": [
+  {components}
+  {rich_text}
+  {
+    "name": "rich-text",
+    "data": {
+      "body": "{exp:streeng encode='yes' find='\n' replace=''}{body}{/exp:streeng}"
+    }
+  },
+  {/rich_text}
+  {cta_panel}
+  {
+    "name": "cta-panel",
+    "data": {
+      "fullScreen": "{full_screen}",
+      "backgroundImage": "{background_image}",
+      "heading": "{heading}",
+      "body": "{exp:streeng encode='yes' find='\n' replace=''}{body}{/exp:streeng}",
+      "buttonUrl": "{button_url}",
+      "buttonText": "{button_text}"
+    }
+  },
+  {/cta_panel}
+  {image_copy}
+  {
+    "name": "image-copy",
+    "data": {
+      "direction": "{direction}",
+      "image": "{image}",
+      "copy": "{exp:streeng encode='yes' find='\n' replace=''}{copy}{/exp:streeng}"
+    }
+  },
+  {/image_copy}
+  {quote}
+  {
+    "name": "quote",
+    "data": {
+      "body": "{body}",
+      "author": "{author}"
+    }
+  },
+  {/quote}
+  {team_members}
+  {
+    "name": "team-members",
+    "data": {
+      "heading": "{heading}",
+      "body": "{exp:streeng encode='yes' find='\n' replace=''}{body}{/exp:streeng}",
+      "team": [
+      {team}
+        {
+          "avatar": "{team:avatar}",
+          "title": "{team:title}",
+          "body": "{exp:streeng encode='yes' find='\n' replace=''}{team:body}{/exp:streeng}"
+        }{if '{team:count}' != '{team:total_results}'},{/if}
+      {/team}
+      ]
+    }
+  },
+  {/team_members}
+  {contact_form}
+  {
+    "name": "contact-form",
+    "data": {
+      "heading": "{heading}",
+      "body": "{exp:streeng encode='yes' find='\n' replace=''}{body}{/exp:streeng}",
+      "buttonText": "{button_text}"
+    }
+  }{if '{blocks:count:of:type}' != '{blocks:total_blocks:of:type}'},{/if}
+  {/contact_form}
+  {/components}
+  ]
+}
+{/exp:channel:entries}

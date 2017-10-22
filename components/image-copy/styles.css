@@ -1,0 +1,39 @@
+.image-copy {
+  padding: 60px 20px;
+}
+
+.image-copy__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+}
+
+.image-copy__inner--image-right {
+  @media (min-width: 769px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.image-copy__image,
+.image-copy__copy {
+  padding: 20px;
+
+  @media (min-width: 769px) {
+    width: calc(50% - 40px);
+  }
+}
+
+.image-copy__image {
+  text-align: center;
+}
+
+.image-copy__img {
+  max-width: 100%;
+}

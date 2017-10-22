@@ -1,0 +1,40 @@
+.cta-panel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-panel--full-screen {
+  height: 100vh;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.cta-panel__inner {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.cta-panel__heading {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 20px 0 5px;
+  text-transform: uppercase;
+}
+
+.cta-panel__body {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+.cta-panel__button {
+  margin: 20px 0;
+}

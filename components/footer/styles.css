@@ -1,0 +1,12 @@
+.footer {
+  align-items: center;
+  display: flex;
+  background: #e4f1fd;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.footer__emoji {
+  margin-right: 4px;
+}

@@ -1,0 +1,55 @@
+@import 'components/styleguide-nav/styles.css';
+@import 'components/header/styles.css';
+@import 'components/footer/styles.css';
+@import 'components/button/styles.css';
+@import 'components/cta-panel/styles.css';
+@import 'components/image-copy/styles.css';
+@import 'components/quote/styles.css';
+@import 'components/rich-text/styles.css';
+@import 'components/team-members/styles.css';
+@import 'components/contact-form/styles.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #297fca;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.components-title {
+  font-size: 60px;
+  margin: 40px auto 80px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.component-title {
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: underline;
+}

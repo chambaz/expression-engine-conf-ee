@@ -1,0 +1,50 @@
+.quote {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 100px 20px 120px;
+}
+
+.quote__body {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.7;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.quote__body:before,
+.quote__body:after {
+  font-size: 120px;
+  font-weight: 200;
+  height: 60px;
+  line-height: 1;
+  position: absolute;
+  width: 60px;
+}
+
+.quote__body:before {
+  content: '\201C';
+  left: -20px;
+  top: -40px;
+
+  @media (min-width: 769px) {
+    left: -60px;
+  }
+}
+
+.quote__body:after {
+  bottom: -40px;
+  content: '\201D';
+  right: 0;
+
+  @media (min-width: 769px) {
+    right: -20px;
+  }
+}
+
+.quote__author {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}

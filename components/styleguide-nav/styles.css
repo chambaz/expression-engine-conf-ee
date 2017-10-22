@@ -1,0 +1,43 @@
+.styleguide-nav {
+  padding: 10px 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  z-index: 99;
+}
+
+.styleguide-nav--active {
+  background: #eee;
+  box-shadow: 1px -1px 30px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.styleguide-nav__hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.styleguide-nav__list {
+  display: none;
+  padding: 0;
+}
+
+.styleguide-nav--active .styleguide-nav__list {
+  display: block;
+}
+
+.styleguide-nav__item {
+  display: block;
+  margin: 10px 0;
+}
+
+.styleguide-nav__link {
+  &,
+  &:active,
+  &:visited,
+  &:hover {
+    color: #297fca;
+  }
+}
